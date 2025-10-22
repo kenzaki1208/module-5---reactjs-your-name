@@ -38,7 +38,7 @@ const students = [
 const Element = (
     <form>
         <h1>Students</h1>
-        <table>
+        <table border={1} cellPadding={5} cellSpacing={0}>
           <thead>
             <tr>
                 <th>company</th>
