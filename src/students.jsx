@@ -36,14 +36,17 @@ const students = [
 ]
 
 const Element = (
-    <div>
+    <form>
         <h1>Students</h1>
         <table>
+          <thead>
             <tr>
                 <th>company</th>
                 <th>contact</th>
                 <th>country</th>
             </tr>
+          </thead>
+          <tbody>
             {students.map(student => (
                 <tr>
                     <td>{student.company}</td>
@@ -51,8 +54,9 @@ const Element = (
                     <td>{student.country}</td>
                 </tr>
             ))}
+          </tbody>
         </table>
-    </div>
+    </form>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root5"));
